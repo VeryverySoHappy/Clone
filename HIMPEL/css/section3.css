@@ -1,0 +1,87 @@
+.slide03_wrap {
+  width: 1380px;
+  height: 510px;
+}
+input[name=slide03] {
+  display: none;
+}
+.slide03 {
+  position: relative;
+  width: 1380px;
+  height: 440px;
+  margin-top: 35px;
+  overflow: hidden;
+}
+.slide03_inner {
+  position: absolute;
+  width: 4140px;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.slide03_inner .slide03Img {
+  position: relative;
+  display: inline-block;
+  margin-right: 22px;
+}
+.slide03_inner a:nth-child(3),
+.slide03_inner a:nth-child(6),
+.slide03_inner a:nth-child(9){
+  margin-right: 0;
+}
+.slide03_inner img {
+  width: 440px;
+  height: 440px;
+  border-radius:40px;
+}
+input[id=slide03_1]:checked ~ .slide03 .slide03_inner {
+  left: 0;
+}
+input[id=slide03_2]:checked ~ .slide03 .slide03_inner {
+  left: -1380px;
+}
+input[id=slide03_3]:checked ~ .slide03 .slide03_inner {
+  left: -2760px;
+}
+input[id=slide03_1]:checked ~ .btn label[for=slide03_1],
+input[id=slide03_2]:checked ~ .btn label[for=slide03_2],
+input[id=slide03_3]:checked ~ .btn label[for=slide03_3]{
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.txt_wrap {
+  opacity: 0;
+  transition: .5s;
+}
+.txt_wrap:hover {
+  position: absolute;
+  width: 100%;
+  height: 440px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+  opacity: 1;
+}
+.txt {
+  position: absolute;
+  bottom: 50px;
+  margin-left: 40px;
+  color: #fff;
+  /* 안 먹히는 이유 */
+}
+.txt div {
+  font-size: 16px;
+  color: #fff;
+}
+.txt h4 {
+  padding-top: 10px;
+  font-size: 28px;
+  color: #fff;
+}
+.txt p {
+  padding-top: 23px;
+  font-size: 20px;
+  color: #fff;
+}

@@ -1,0 +1,127 @@
+/* header 시작 */
+header {width: 100%;}
+header .header_inner {
+  width: 1380px;
+  height: 80px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_inner .headerL {display: flex;}
+.header_inner .headerL h1 {
+  background: url(../img/logo.png)no-repeat 0 0;
+  width: 110px;
+  height: 20px;
+  text-indent: -9999px;
+}
+.headerL ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerL ul a {transition: 0.3s;}
+.headerL ul a:hover {color: #e21244;}
+.headerL h1 {padding-right: 70px;}
+.headerL ul li {
+  padding-right: 25px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.headerR {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 276px;
+}
+
+/* searchBtn start */
+.searchBtn {
+  position: relative;
+  width: 180px;
+  height: 30px;
+  border: 1px solid #e21244;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.searchBtn input {display: none;}
+.searchBtn .searchPop {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.searchBtn input + label + div {
+  display: none;
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+  position: absolute;
+  top: 100%;
+  left: -50%;
+  transform: translate(0%, 0%);
+  z-index: 2;
+}
+.searchBtn input:checked + label + div {
+  display: block;
+}
+.searchBtn input + label + div label {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: #fff;
+  padding: 20px;
+}
+/* searchBtn end */
+/* loginMenu start */
+.loginMenu {position: relative;}
+.loginMenu_sub {
+  position: absolute;
+  width: 110px;
+  top: 50px;
+  left: -65px;
+  padding: 20px 20px;
+  border-radius: 20px;
+  background-color: #e21244;
+  opacity: 0;
+  transition: 0.3s;
+  visibility: hidden;
+  z-index: 1;
+}
+.loginMenu ul li a {
+  line-height: 2.5em;
+  color: #fff;
+  font-size: 16px;
+}
+.loginMenu .loginMenu_sub:after {
+  content: '';
+  position: absolute;
+  background-color: #e21244;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg) translateX(-50%);
+  top: 0;
+  left: 50%;
+}
+.loginMenu:hover .loginMenu_sub {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+/* loginMenu end */
+.cart {position: relative;}
+.cartCount {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  background-color: #e21244;
+  border: 1px solid #fff;
+}

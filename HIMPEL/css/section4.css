@@ -1,0 +1,52 @@
+.section04 h2 {
+  margin-bottom: 70px;
+}
+.section04 .inner {
+  width: 1380px;
+}
+.section04 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.section04 li {
+  width: 430px;
+  height: 618px;
+}
+.section04Img {
+  width: 430px;
+  height: 430px;
+  border-radius: 10%;
+  transition: .5s;
+}
+.section04Img:hover {
+  transform:scale(.9);
+  transition: transform .5s; 	
+}
+.type {
+  font-size: 15px;
+  color: #eb1f4b;
+  margin: 35px 0 5px 0;
+  font-weight: bold;
+}
+
+.title04 {
+  font-size: 22px;
+}
+.explanation {
+  font-size: 16px;
+  margin-top: 15px;
+}
+.date {
+  margin-top: 16px;
+  font-size: 15px;
+}
+.date span:first-child {
+  border-right: 1px solid #888;
+  margin-right: 15px;
+  padding-right: 20px;
+}
+.date span:last-child img {
+  margin-right: 5px;
+}

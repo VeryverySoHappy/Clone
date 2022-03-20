@@ -1,0 +1,12 @@
+.section5 .inner {
+  padding-top: 50px;
+}
+.section5 ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section5 li {
+  padding: 25px;
+}
