@@ -1,1 +1,64 @@
+@charset "utf-8";
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.slider {
+  width: 1920px;
+  height: 495px;
+  margin: 0 auto;
+  position: relative;
+}
+.count_N {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 18px;
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  font-size: 17px;
+  color: #fff;
+  z-index: 1;
+}
+.count_N .count {padding: 5px;}
+.count_N .btn_stop {padding: 5px 10px;}
+.control .btn_left {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  left: -200px;
+  transform: rotate(-45deg) translateY(-50%);
+}
+.control .btn_right {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  right: -200px;
+  transform: rotate(135deg) translateY(-50%);
+}
+.slider_list {
+  overflow: hidden;
+  width: 1920px;
+  height: 495px;
+}
+.slider_list ul {
+  position: relative;
+  z-index: -1;
+}
+.slider_list ul li {
+  width: 1950px;
+  height: 495px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
