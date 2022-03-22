@@ -1,8 +1,8 @@
 @charset "utf-8";
-.section1 {
-  width: 100%;
-}
+.section1 {width: 100%;}
 .section1 .inner {
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;

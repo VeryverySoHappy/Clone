@@ -18,17 +18,27 @@ $(document).ready(function(){
     move(num)
   })
 
-  $('.btn_stop').on('click', function(e){
-    e.preventDefault();
-    if($(this).hasClass('pause')===true){
-      clearInterval(popupset);
-      $(this).removeClass('pause')
-      $(this).addClass('play')
-    }else{
-      popupset = setInterval(function() {set()}, 2000)
-      $(this).removeClass('play')
-      $(this).addClass('pause')
-    }
+  $('.btn_stop').on('click',function(e){
+    e.preventDefault()
+    clearInterval(popupset)
+    $(this).css({
+      'display':'none'
+    })
+    $('.btn_play').css({
+      'display':'inline-block'
+    })
+  })
+  $('.btn_play').on('click',function(e){
+    e.preventDefault()
+    popupset=setInterval(function(){
+      set()
+    },2000)
+    $(this).css({
+      'display':'none'
+    })
+    $('.btn_stop').css({
+      'display':'inline-block'
+    })
   })
 
   var popupset = setInterval(function(){
