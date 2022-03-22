@@ -1,3 +1,13 @@
+// top_btn 시작
+$(document).ready(function(){
+  $('.close').on('click',function(e){
+    e.preventDefault();
+    $(this).css({'display': 'none'})
+    $('.top_btnImg').css({'display':'none'})
+  })
+})
+// top_btn 끝
+
 // gnb 시작
 $(document).ready(function(){
   var navOffset=$('.gnb').offset().top;

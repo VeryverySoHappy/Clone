@@ -1,5 +1,29 @@
 @charset "utf-8";
 
+.top_btn {
+  position: fixed;
+  top: 20%;
+  right: 5%;
+  z-index: 9999;
+  animation: topBtn .5s linear 1s infinite alternate;
+}
+@keyframes topBtn {
+  0%{
+    top: 20%;
+  }
+  100%{
+    top: 18%;
+  }
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: -15px;
+  background-color: transparent;
+  border: none;
+  font-size: 35px;
+  cursor: pointer;
+}
 header {width: 100%;}
 header h1 {
   background: url(../img/sp_common.png) no-repeat 0 0;
