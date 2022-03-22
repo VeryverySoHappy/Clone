@@ -13,11 +13,22 @@ header h1 {
   align-items: center;
   justify-content: space-between;
 }
-.top_wrap .promotion {
-  width: 345px;
-  height: 31px;
-  border-bottom: 1px solid #222;
+.site_search {
+  border-bottom: 1px solid #000;
+  width: 300px;
+  padding: 5px;
+}
+.site_search input[type=text]{
+  width: 260px;
+  border: none;
+  padding: 5px;
+}
+.site_search input[type=submit]{
+  border: none;
+  color: #000;
   font-weight: bold;
+  background-color:transparent;
+  cursor: pointer;
 }
 .top_wrap .top_wrapR {
   display: flex;
@@ -40,6 +51,9 @@ header h1 {
   border: 1px solid #ddd;
   color: #888;
   font-size: 12px;
+}
+.gnb {
+  position: relative;
 }
 .gnb_inner {
   width: 1200px;
@@ -73,6 +87,7 @@ header h1 {
 .sub_menu {
   display: none;
   position: absolute;
+  width: 100%;
 }
 .sub_wrap {
   display: flex;
@@ -98,8 +113,6 @@ header h1 {
   font-size: 17px;
   color: #000;
 }
-.subL .sub01 ul,
-.subR ul {margin-top: 20px;}
 .subL .sub01 ul li,
 .subR li {padding: 10px 0;}
 .subL .sub01 a,
@@ -120,7 +133,8 @@ header h1 {
   transform: translateX(-50%);
 }
 .sub01 a:hover:before {width: 100%;}
-.subR {width: 330px;}
+.subR {width: 330px;
+padding: 0 80px;}
 .notice {font-size: 17px;}
 .subR ul li:first-child {
   border: 1px solid #000;
