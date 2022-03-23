@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+.skip, legend {
+  /* 스크립 리더기는 읽지만 우리 눈에는 안 보이는 것 */
+
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  /* text-indent:-9999px */
+  position: absolute;
+  left: -999px;
+  line-height: 0;
+  display: inline-block;
+  /* 인라인이나 인라인 블록으로 해도됌 */
+}
+.cartPlus {
+  background: url(../img/btnCartList.png) no-repeat 0 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+  display: inline-block;
+  text-indent: -9999px;
+}
+.cartPlus:hover{
+  background: url(../img/btnCartList.png) no-repeat 0, 30px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.cartPlus:active {
+  background: url(../img/btnCartList.png) no-repeat 0, 60px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
