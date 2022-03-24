@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-
+/* main start */
 .slider {
   width: 1920px;
   height: 495px;
@@ -71,3 +71,194 @@
   top: 0;
   left: 0;
 }
+/* main end */
+/* section1 start */
+.section1 {width: 100%;}
+.section1 .inner {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 280px;
+}
+.item h3{
+  font-size: 42px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item1 h3{color: #ff143c;}
+.item2 h3 {color: #1382ff;}
+.item3 h3 {color: #000;}
+.circle {
+  display: inline-block;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 100%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 10px;
+}
+.item p {
+  font-size: 16px;
+  margin-top: 17px;
+  color: #888;
+}
+/* section1 end */
+/* section2 start */
+.section2 {
+  width: 100%;
+  height: 210px;
+  padding: 110px 0;
+  background-color: #f6f6f6;
+}
+.section2 .inner{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section2_info {
+  font-size: 28px;
+  font-weight: 500;
+}
+.section2 strong {
+  color: #238ece;
+  font-weight: 600;
+}
+.section2 .section2_info a{
+  display: block;
+  width: 60px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #222;
+  border-radius: 30px;
+  color: #fff;
+}
+.slide {
+  position: relative;
+  width: 650px;
+  height: 210px;
+  overflow: hidden;
+}
+.slide-inner {
+  width: 1960px;
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.slide-inner a:not(:nth-child(3),:nth-child(6)) {
+  margin-right: 10px;
+}
+.btn {
+  text-align: center;
+  margin-top: 20px;
+}
+.btn label {
+  display: inline-block;
+  width: 60px;
+  height: 7px;
+  background-color: lightgray;
+  cursor: pointer;
+}
+input[id=tab1]:checked ~ .slide .slide-inner {
+  left: 0;
+}
+input[id=tab2]:checked ~ .slide .slide-inner {
+  left: -650px;
+}
+input[id=tab3]:checked ~ .slide .slide-inner {
+  left: -1300px;
+}
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3] {
+  background-color: #000;
+  width: 90px;
+  height: 9px;
+}
+/* section2 end */
+/* section3 start */
+.section3 {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+.section3 .inner {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+}
+
+.section3Item {
+  width: 300px;
+  height: 300px;
+  margin: 0px 15px;
+  position: relative;
+}
+.section3Item img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px 15px 0 0;
+}
+.section3Item .front,
+.section3Item .back {
+  position: absolute;
+  transition: .5s;
+  bottom:0;
+}
+.section3Item .front {
+  z-index: 1;
+  border-radius: 15px 15px 0;
+}
+.section3Item .back {
+  width: 298px;
+  height: 130px;
+  border-radius: 0 0 15px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  justify-content: center;
+  align-items: end;
+}
+.section3Item:hover .front {
+  bottom: 65px;
+}
+.section3Item:hover .back {
+  bottom: -65px;
+}
+.section3Item .back h3 {
+  font-size: 16px;
+  margin: 30px 0 10px 0;
+}
+.section3Item .back a {
+  display: inline-block;
+  background: #e21244;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 35px;
+  margin-top: 20px;
+}
+
+.tab-inner {
+  /* border: 1px solid red; */
+  width: 651px;
+  height: 250px;
+}
+input[name=tabmenu] {
+  display: none;
+}
+/* section3 end */

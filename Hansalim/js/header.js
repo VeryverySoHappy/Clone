@@ -1,6 +1,6 @@
-// providePop start
+// deliveryPop start
 $(document).ready(function(){
-  $('.provideBtn').on('click',function(e){
+  $('.deliveryBtn').on('click',function(e){
     e.preventDefault();
     $('body').append('<div id="shadow"></div>')
     $('#shadow').css({
@@ -15,22 +15,22 @@ $(document).ready(function(){
       e.preventDefault();
       $('#closeBtn').trigger('click')
     })
-    $('#providePop').css({
+    $('#deliveryPop').css({
       position:'fixed',
       top:'50%',
       left:'50%',
       transform: 'translate(-50%,-50%)',
       marginLeft:'-20px'
     })
-    $('#providePop').show();
+    $('#deliveryPop').show();
   })
   $('#closeBtn').on('click',function(e){
     e.preventDefault();
-    $('#providePop').hide();
+    $('#deliveryPop').hide();
     $('#shadow').remove();
   })
 })
-// providePop end
+// deliveryPop end
 
 // information start
 $(document).ready(function(){
