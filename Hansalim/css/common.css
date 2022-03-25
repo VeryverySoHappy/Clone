@@ -37,6 +37,21 @@ a{
 .title strong {
   font-weight: 900
 }
+.subtitle{
+  text-align: center;
+  color:#E187B8;
+}
+h2 {
+  font-size: 35px;
+  line-height: 1.8em;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.explain {
+  text-align: center;
+  color: #999;
+}
 .imgWrap {
   display: inline-block;
   position: relative;

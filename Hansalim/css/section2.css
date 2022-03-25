@@ -3,31 +3,19 @@
 }
 .section02 .inner {
   width: 1200px;
-  height: 882px;
+  height: 800px;
   margin: 0 auto;
-}
-.section02 .inner .festa{text-align: center;}
-.section02 .inner h2 {
-  font-size: 35px;
-  line-height: 1.8em;
-  font-weight: normal;
-  text-align: center;
-  margin-bottom: 5px;
-}
-.section02 .inner .explain {
-  text-align: center;
-  color: #999;
 }
 .section02 .slider_wrap {
   margin-top: 45px;
 }
-input[name=slide] {
+input[name=slide1] {
   display: none;
 }
 .slide {
   position: relative;
   width: 1200px;
-  height: 550px;
+  height: 520px;
   overflow: hidden;
 }
 .slider_inner {
@@ -48,18 +36,29 @@ input[name=slide] {
   margin-right: 21px;
   position: relative;
 }
-.slider_inner a:nth-child(3),
-.slider_inner a:nth-child(6),
-.slider_inner a:nth-child(9) {
+input[id=slide1_1]:checked ~ .slide .slider_inner {left: 0;}
+input[id=slide1_2]:checked ~ .slide .slider_inner {left: -1200px;}
+input[id=slide1_3]:checked ~ .slide .slider_inner {left: -2400px;}
+input[id=slide1_1]:checked ~ .slideBtn label[for=slide1_1],
+input[id=slide1_2]:checked ~ .slideBtn label[for=slide1_2],
+input[id=slide1_3]:checked ~ .slideBtn label[for=slide1_3]{
+  width: 40px;
+  height: 15px;
+  border-radius: 30px;
+  background: #60008075;
 }
-input[id=slide_1]:checked ~ .slide .slider_inner {
-  left: 0;
+.slideBtn {
+  width: 120px;
+  margin: 0 auto;
 }
-input[id=slide_2]:checked ~ .slide .slider_inner {
-  left: -1200px;
-}
-input[id=slide_3]:checked ~ .slide .slider_inner {
-  left: -2400px;
+.slideBtn label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  /* border: 3px solid #60008075; */
+  background: #cacaca;
+  text-indent: -9999px;
 }
 .goods .state {
   position: absolute;
