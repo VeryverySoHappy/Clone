@@ -5,14 +5,14 @@ $(document).ready(function(){
     e.preventDefault();
     num--;
     if(num<1){
-      num=5
+      num=13
     }
     move(num)
   })
   $('.btn_right').on('click',function(e){
     e.preventDefault();
     num++
-    if(num>5){
+    if(num>13){
       num=1
     }
     move(num)

@@ -1,26 +1,12 @@
-*{
-  margin: 0;
-  padding: 0;
+.inner {
+  width: 1200px;
+  margin: 0 auto;
 }
-ul {
-  list-style-type: none;
-}
-a{
-  text-decoration: none;
-  color: #000;
-}
-.skip, legend {
-  /* 스크립 리더기는 읽지만 우리 눈에는 안 보이는 것 */
-
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  /* text-indent:-9999px */
-  position: absolute;
-  left: -999px;
-  line-height: 0;
-  display: inline-block;
-  /* 인라인이나 인라인 블록으로 해도됌 */
+h2 {
+  font-size: 35px;
+  line-height: 1.8em;
+  font-weight: normal;
+  margin-bottom: 5px;
 }
 .explain {
   text-align: center;
@@ -49,7 +35,6 @@ a{
 }
 .name {
   font-size: 17px;
-  /* line-height: 2.5em; */
   line-height: 1.5em;
   padding: 5px 0;
 }
@@ -70,7 +55,6 @@ a{
   display: inline-block;
   font-size: 12px;
   padding: 5px;
-  /* border: 3px solid #5f0080; */
   background-color: #f5f5f5;
   border-radius: 10px;
   margin-top: 15px;

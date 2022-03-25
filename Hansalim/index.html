@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/common.css">
+  <link rel="stylesheet" type="text/css" href="./css/header.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="./css/footer.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">  <title>한살림 장보기::지구를 살리는 뜻깊은 생활실천, 한살림</title>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <div class="headerTop">
+        <div class="headerL">
+          <a href="#"><h1>한살림장보기</h1></a>
+          <!-- delivery start -->
+          <div class="delivery">
+            <a href="#" class="deliveryBtn">
+              <span><img src="./img/icoLocation.png" alt=""> 공급일</span>
+            </a>
+            <!-- deliveryPop start -->
+            <div class="deliveryPop" id="deliveryPop">
+              <a href="#" class="closeBtn" id="closeBtn">
+                <img src="./img/btnPopClose.png" alt="">
+              </a>
+              <h2>공급일 선택</h2>
+              <table class="deliveryTable">
+                <tr>
+                  <th>공급일</th>
+                  <th>일반공급</th>
+                </tr>
+                <tr>
+                  <td>03월 27일(일)</td>
+                  <td class="holiday">마감</td>
+                </tr>
+                <tr>
+                  <td>03월 28일(월)</td>
+                  <td>
+                    <input type="radio" name="select" id="select1">
+                    <label for="select1">선택가능</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>03월 29일(화)</td>
+                  <td>
+                    <input type="radio" name="select" id="select2">
+                    <label for="select2">선택가능</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>03월 30일(수)</td>
+                  <td>
+                    <input type="radio" name="select" id="select3">
+                    <label for="select3">선택가능</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>03월 31일(목)</td>
+                  <td>
+                    <input type="radio" name="select" id="select4">
+                    <label for="select4">선택가능</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>04월 01일(금)</td>
+                  <td>
+                    <input type="radio" name="select" id="select5">
+                    <label for="select5">선택가능</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>04월 02일(토)</td>
+                  <td rowspan="2" class="holiday">휴무일</td>
+                </tr>
+                <tr>
+                  <td>04월 03일(일)</td>
+                </tr>
+              </table>
+              <ul class="deliveryInfo">
+                <li>· 9일 후 공급일까지 선택 가능 합니다.</li>
+                <li>· 일일 공급량 초과로 주문이 조기 마감된 경우 다음 공급일로 자동 지정됩니다.</li>
+              </ul>
+              <div class="deliverySelect">
+                <a href="#" class="deliveryNo deli">취소</ㅁ>
+                <a href="#" class="deliveryYes deli">확인</a>
+              </div>
+            </div>
+          </div>
+          <!-- deliveryPop end -->
+        </div>
+        <div class="headerR">
+          <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">나의한살림</a></li>
+            <li><a href="#" class="information" id="information">조합원센터 <i class="fa-solid fa-angle-down fa"></i></a>
+              <ul class="information_sub" id="information_sub">
+                <li><a href="#">상담/문의</a></li>
+                <li><a href="#">자주묻는질문</a></li>
+                <li><a href="#">이용후기</a></li>
+                <li><a href="#">물품소식</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">방사성물질검사결과</a></li>
+                <li><a href="#">축산물이력검사</a></li>
+              </ul>
+            </li>
+            <li><a href="#">매장안내</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="gnb">
+        <ul>
+          <li class="allMenu gnbList" id="allMenu"><a href="#"><i class="fa-solid fa-bars fa"></i>전체물품</a>
+            <ul class="gnb2" id="gnb2">
+              <li><a href="#">쌀/잡곡</a>
+                <ul class="gnb3" id="gnb3">
+                  <li><a href="#">멥쌀/찹쌀</a></li>
+                  <li><a href="#">잡곡/깨</a></li>
+                  <li><a href="#">콩류</a></li>
+                  <li><a href="#">혼합곡/보리/유색미</a></li>
+                </ul>
+              </li>
+              <li><a href="#">채소/버섯</a>
+                <ul class="gnb3" id="gnb31">
+                  <li><a href="#">콩나물/숙주</a></li>
+                  <li><a href="#">잎/줄기채소</a></li>
+                  <li><a href="#">열매채소</a></li>
+                  <li><a href="#">뿌리채소</a></li>
+                  <li><a href="#">버섯류</a></li>
+                  <li><a href="#">말린나물류</a></li>
+                  <li><a href="#">손질한채소</a></li>
+                  <li><a href="#">양념/조미채소</a></li>
+                </ul>
+              </li>
+              <li><a href="#">과일/견과</a></li>
+              <li><a href="#">축산/축산가공</a></li>
+              <li><a href="#">수산/수산가공</a></li>
+              <li><a href="#">반찬/양념/가루</a></li>
+              <li><a href="#">식사대용/간편식</a></li>
+              <li><a href="#">간식/음료/유제품</a></li>
+              <li><a href="#">건강/차</a></li>
+              <li><a href="#">화장품/오가닉코튼</a></li>
+              <li><a href="#">주방/욕실/세정</a></li>
+            </ul>
+          </li>
+          <li class="gnbList"><a href="#">추천</a></li>
+          <li class="gnbList"><a href="#">알뜰</a></li>
+          <li class="gnbList"><a href="#">기획전</a></li>
+          <li class="gnbList"><a href="#" class="circle">영유아</a></li>
+          <li class="gnbList"><a href="#" class="circle">채식</a></li>
+          <li class="gnbList"><a href="#" class="participate" id="participate">참여 <i class="fa-solid fa-angle-down fa"></i>
+            <ul class="participate_sub">
+              <li><a href="#">신규물품제안</a></li>
+              <li><a href="#">참여이벤트</a></li>
+            </ul>
+          </a>
+          <li><a href="#" class="more" id="more">더보기 <i class="fa-solid fa-angle-down fa"></i></a>
+            <ul class="more_sub">
+              <li><a href="#">한살림이야기</a></li>
+              <li><a href="#">생산자와 물품</a></li>
+              <li><a href="#">세상의 밥</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="gnbR">
+          <form method="post" name="searchfrm" class="search">
+            <input type="text" id="search" class="input_val" name="inval" placeholder="무엇을 찾아드릴까요?"/>
+            <input type="submit" value="검색"/>
+          </form>
+          <div class="search_sub">
+            <div class="search_subT">
+              <div class="search_subTL">
+                <div class="search_subTitle">
+                  <h3>최근 검색어</h3>
+                  <button>전체삭제</button>
+                </div>
+                <ul>
+                  <li>최근 검색내역이 없습니다 </li>
+                </ul>
+              </div>
+              <div class="search_subTR">
+                <div class="search_subTitle">
+                  <h3>인기 검색어</h3>
+                  <p>22.03.25기준</p>
+                </div>
+                <ul>
+                  <li><span class="rank">1</span>두부</li>
+                  <li><span class="rank">2</span>김</li>
+                  <li><span class="rank">3</span>계란</li>
+                  <li><span class="rank">4</span>무</li>
+                  <li><span class="rank">5</span>쌀</li>
+                  <li><span class="rank">6</span>우유</li>
+                  <li><span class="rank">7</span>양파</li>
+                  <li><span class="rank">8</span>현미</li>
+                  <li><span class="rank">9</span>떡</li>
+                  <li><span class="rank">10</span>사과</li>
+                </ul>
+              </div>
+            </div>
+            <div class="search_subB">
+              <h3>진행중인 기획전</h3>
+              <div class="searchImg">
+                <span class="searchImgL">
+                  <img src="./img/1646971068124.jpg" alt="">
+                  <b>냉동채소 2종 가격인하</b>
+                </span>
+                <span class="searchImgR">
+                  <img src="./img/1644903491263.jpg" alt="">
+                  <b>3월 이맘때 이 물품</b>
+                </span>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="cart">
+            <img src="./img/btnCart.png" alt="">
+            <div class="cartCount">0</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="slider">
+      <h2 class="skip">한살림 장보기 메인</h2>
+      <div class="stopPlay">
+        <a href="#" class="btn_stop"><span class="skip">알림판정지</span></a>
+        <a href="#" class="btn_play"><span class="skip">알림판재생</span></a>
+      </div>
+      <div class="count_N">
+        <span class="count">1</span><span class="slider_total">/13</span>
+      </div>
+      <a href="#" class="moreImg"><i class="fa-solid fa-plus fa"></i></a>
+      <div class="control">
+        <a href="#" class="btn_left">알림판이전보기</a>
+        <a href="#" class="btn_right">알림판다음보기</a>
+      </div>
+      <div class="slider_list">
+        <ul>
+          <li class="on"><a href="#"><img src="./img/main1.jpg" alt=""></a></li>
+          <li><a href="#"><img src="./img/main2.jpg" alt=""></a></li>
+          <li><a href="#"><img src="./img/main3.jpg" alt=""></a></li>
+          <li><a href="#"><img src="./img/main4.jpg" alt=""></a></li>
+          <li><a href="#"><img src="./img/main5.jpg" alt=""></a></li>
+          <li><a href="#"><img src="./img/main6.jpg" alt=""></a></li>
+          <li><a href="#"><img src="./img/main7.jpg" alt=""></a></li>
+          <li><a href="#"><img src="./img/main8.jpg" alt=""></a></li>
+          <li><a href="#"><img src="./img/main9.jpg" alt=""></a></li>
+          <li><a href="#"><img src="./img/main10.jpg" alt=""></a></li>
+          <li><a href="#"><img src="./img/main11.jpg" alt=""></a></li>
+          <li><a href="#"><img src="./img/main12.jpg" alt=""></a></li>
+          <li><a href="#"><img src="./img/main13.jpg" alt=""></a></li>
+        </ul>
+      </div>
+    </div>  
+  </main>
+  <section class="section01">
+    <div class="inner">
+      <h2>이 물품은 어떠세요?</h2>
+      <div class="goods">
+        <a href="#" class="imgWrap">
+          <img src="./img/best10.jpg" alt="" class="goodsImg">
+          <div class="state">BEST</div>
+        </a>
+        <a href="#">
+          <h3 class="name">닭가슴살 곤약볶음밥 3종 (불고기맛/깍두기/카레)</h3>
+          <p class="price">2,200원</p>
+          <span class="tag">Kurly Only</span>
+        </a>
+        <button type="checkbox" class="cartPlus">장바구니</button>
+      </div>
+      <div class="goods">
+        <a href="#" class="imgWrap">
+          <img src="./img/best10.jpg" alt="" class="goodsImg">
+          <div class="state">BEST</div>
+        </a>
+        <a href="#">
+          <h3 class="name">닭가슴살 곤약볶음밥 3종 (불고기맛/깍두기/카레)</h3>
+          <p class="price">2,200원</p>
+          <span class="tag">Kurly Only</span>
+        </a>
+        <button type="checkbox" class="cartPlus">장바구니</button>
+      </div>
+      <div class="goods">
+        <a href="#" class="imgWrap">
+          <img src="./img/best10.jpg" alt="" class="goodsImg">
+          <div class="state">BEST</div>
+        </a>
+        <a href="#">
+          <h3 class="name">닭가슴살 곤약볶음밥 3종 (불고기맛/깍두기/카레)</h3>
+          <p class="price">2,200원</p>
+          <span class="tag">Kurly Only</span>
+        </a>
+        <button type="checkbox" class="cartPlus">장바구니</button>
+      </div>
+
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
