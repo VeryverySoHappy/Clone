@@ -9,141 +9,64 @@
   <link rel="stylesheet" type="text/css" href="./css/header.css">
   <link rel="stylesheet" type="text/css" href="./css/main.css">
   <link rel="stylesheet" type="text/css" href="./css/footer.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">  <title>한살림 장보기::지구를 살리는 뜻깊은 생활실천, 한살림</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  <title>한살림 장보기::지구를 살리는 뜻깊은 생활실천, 한살림</title>
 </head>
 <body>
   <header>
-    <div class="inner">
+    <div class="headerInner">
       <div class="headerTop">
-        <div class="headerL">
-          <a href="#"><h1>한살림장보기</h1></a>
-          <!-- delivery start -->
-          <div class="delivery">
-            <a href="#" class="deliveryBtn">
-              <span><img src="./img/icoLocation.png" alt=""> 공급일</span>
+        <ul>
+          <li><a href="#" style="color: #76bd42;">로그인</a></li>
+          <li><a href="#">나의한살림</a></li>
+          <li><a href="#">조합원센터</a></li>
+          <li><a href="#">매장안내</a></li>
+        </ul>
+      </div>
+      <div class="headerL">
+        <a href="#"><h1 class="logo">식봄</h1></a>
+        <!-- delivery start -->
+        <div class="delivery">
+          <a href="#" class="deliveryBtn gray">오늘 주문하면<div class="green">내일 배송</div></a>
+          <!-- deliveryPop start -->
+          <div class="deliveryPop" id="deliveryPop">
+            <a href="#" class="closeBtn" id="closeBtn">
+              <img src="./img/btnPopClose.png" alt="">
             </a>
-            <!-- deliveryPop start -->
-            <div class="deliveryPop" id="deliveryPop">
-              <a href="#" class="closeBtn" id="closeBtn">
-                <img src="./img/btnPopClose.png" alt="">
-              </a>
-              <h2>공급일 선택</h2>
-              <table class="deliveryTable">
-                <tr>
-                  <th>공급일</th>
-                  <th>일반공급</th>
-                </tr>
-                <tr>
-                  <td>03월 27일(일)</td>
-                  <td class="holiday">마감</td>
-                </tr>
-                <tr>
-                  <td>03월 28일(월)</td>
-                  <td>
-                    <input type="radio" name="select" id="select1">
-                    <label for="select1">선택가능</label>
-                  </td>
-                </tr>
-                <tr>
-                  <td>03월 29일(화)</td>
-                  <td>
-                    <input type="radio" name="select" id="select2">
-                    <label for="select2">선택가능</label>
-                  </td>
-                </tr>
-                <tr>
-                  <td>03월 30일(수)</td>
-                  <td>
-                    <input type="radio" name="select" id="select3">
-                    <label for="select3">선택가능</label>
-                  </td>
-                </tr>
-                <tr>
-                  <td>03월 31일(목)</td>
-                  <td>
-                    <input type="radio" name="select" id="select4">
-                    <label for="select4">선택가능</label>
-                  </td>
-                </tr>
-                <tr>
-                  <td>04월 01일(금)</td>
-                  <td>
-                    <input type="radio" name="select" id="select5">
-                    <label for="select5">선택가능</label>
-                  </td>
-                </tr>
-                <tr>
-                  <td>04월 02일(토)</td>
-                  <td rowspan="2" class="holiday">휴무일</td>
-                </tr>
-                <tr>
-                  <td>04월 03일(일)</td>
-                </tr>
-              </table>
-              <ul class="deliveryInfo">
-                <li>· 9일 후 공급일까지 선택 가능 합니다.</li>
-                <li>· 일일 공급량 초과로 주문이 조기 마감된 경우 다음 공급일로 자동 지정됩니다.</li>
-              </ul>
-              <div class="deliverySelect">
-                <a href="#" class="deliveryNo deli">취소</ㅁ>
-                <a href="#" class="deliveryYes deli">확인</a>
-              </div>
+            <h2>배송받을 지역을 선택해주세요.</h2>
+            <p class="delivery_explain dx_gray">오늘 주문하면 내일 배송되는 <mark class="green">직배송 상품</mark>을 보여드릴게요!</p>
+            <p class="delivery_explain green">업체마다 배송시간이 다르니 꼭 확인해주세요 &#58; &#41;</p>
+            <ul>
+              <li><a href="#">서울시</a></li>
+              <li><a href="#">경기도</a></li>
+              <li><a href="#">인천시</a></li>
+              <li><a href="#">부산시</a></li>
+              <li><a href="#">양산시</a></li>
+              <li><a href="#">천안시 동남구</a></li>
+              <li><a href="#">천안시 서북구</a></li>
+              <li><a href="#">아산시</a></li>
+              <li><a href="#">보령시</a></li>
+              <li><a href="#">서산시</a></li>
+              <li><a href="#">그 외(택배배송)</a></li>
+            </ul>
+            <ul class="deliveryInfo">
+              <li>· 9일 후 공급일까지 선택 가능 합니다.</li>
+              <li>· 일일 공급량 초과로 주문이 조기 마감된 경우 다음 공급일로 자동 지정됩니다.</li>
+            </ul>
+            <div class="deliverySelect">
+              <a href="#" class="deliveryNo deli">취소</a>
+              <a href="#" class="deliveryYes deli">확인</a>
             </div>
           </div>
-          <!-- deliveryPop end -->
         </div>
-        <div class="headerR">
-          <ul>
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">나의한살림</a></li>
-            <li><a href="#" class="information" id="information">조합원센터 <i class="fa-solid fa-angle-down fa"></i></a>
-              <ul class="information_sub" id="information_sub">
-                <li><a href="#">상담/문의</a></li>
-                <li><a href="#">자주묻는질문</a></li>
-                <li><a href="#">이용후기</a></li>
-                <li><a href="#">물품소식</a></li>
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">방사성물질검사결과</a></li>
-                <li><a href="#">축산물이력검사</a></li>
-              </ul>
-            </li>
-            <li><a href="#">매장안내</a></li>
-          </ul>
-        </div>
+        <!-- deliveryPop end -->
       </div>
       <div class="gnb">
         <ul>
           <li class="allMenu gnbList" id="allMenu"><a href="#"><i class="fa-solid fa-bars fa"></i>전체물품</a>
             <ul class="gnb2" id="gnb2">
-              <li><a href="#">쌀/잡곡</a>
-                <ul class="gnb3" id="gnb3">
-                  <li><a href="#">멥쌀/찹쌀</a></li>
-                  <li><a href="#">잡곡/깨</a></li>
-                  <li><a href="#">콩류</a></li>
-                  <li><a href="#">혼합곡/보리/유색미</a></li>
-                </ul>
-              </li>
-              <li><a href="#">채소/버섯</a>
-                <ul class="gnb3" id="gnb31">
-                  <li><a href="#">콩나물/숙주</a></li>
-                  <li><a href="#">잎/줄기채소</a></li>
-                  <li><a href="#">열매채소</a></li>
-                  <li><a href="#">뿌리채소</a></li>
-                  <li><a href="#">버섯류</a></li>
-                  <li><a href="#">말린나물류</a></li>
-                  <li><a href="#">손질한채소</a></li>
-                  <li><a href="#">양념/조미채소</a></li>
-                </ul>
-              </li>
-              <li><a href="#">과일/견과</a></li>
-              <li><a href="#">축산/축산가공</a></li>
-              <li><a href="#">수산/수산가공</a></li>
-              <li><a href="#">반찬/양념/가루</a></li>
-              <li><a href="#">식사대용/간편식</a></li>
-              <li><a href="#">간식/음료/유제품</a></li>
-              <li><a href="#">건강/차</a></li>
-              <li><a href="#">화장품/오가닉코튼</a></li>
-              <li><a href="#">주방/욕실/세정</a></li>
+              <li><a href="#">채소·과일</a></li>
+              <li><a href="#">냉장</a></li>
             </ul>
           </li>
           <li class="gnbList"><a href="#">추천</a></li>
@@ -259,45 +182,461 @@
   <section class="section01">
     <div class="inner">
       <h2>이 물품은 어떠세요?</h2>
-      <div class="goods">
-        <a href="#" class="imgWrap">
-          <img src="./img/best10.jpg" alt="" class="goodsImg">
-          <div class="state">BEST</div>
-        </a>
-        <a href="#">
-          <h3 class="name">닭가슴살 곤약볶음밥 3종 (불고기맛/깍두기/카레)</h3>
-          <p class="price">2,200원</p>
-          <span class="tag">Kurly Only</span>
-        </a>
-        <button type="checkbox" class="cartPlus">장바구니</button>
+      <div class="goodsWrap">
+        <div class="goods">
+          <a href="#" class="imgWrap">
+            <img src="./img/goods1.jpg" alt="" class="goodsImg">
+            <div class="state">BEST</div>
+            <button type="checkbox" class="cartPlus">장바구니</button>
+          </a>
+          <a href="#">
+            <h3 class="name">사과(소2kg)</h3>
+            <del class="discount">10,000원</del>
+            <p class="price"><span class="percent">15%</span>7,208원</p>
+            <span class="tag">Hansalim Only</span>
+          </a>
+        </div>
+        <div class="goods">
+          <a href="#" class="imgWrap">
+            <img src="./img/goods2.jpg" alt="" class="goodsImg">
+            <div class="state">BEST</div>
+            <button type="checkbox" class="cartPlus">장바구니</button>
+          </a>
+          <a href="#">
+            <h3 class="name">찌개용앞다리/조각(300g/우리보리살림돼지)</h3>
+            <del class="discount">6,500원</del>
+            <p class="price"><span class="percent">15%</span>7,208원</p>
+            <span class="tag">Hansalim Only</span>
+          </a>
+        </div>
+        <div class="goods">
+          <a href="#" class="imgWrap">
+            <img src="./img/goods3.jpg" alt="" class="goodsImg">
+            <div class="state">BEST</div>
+            <button type="checkbox" class="cartPlus">장바구니</button>
+          </a>
+          <a href="#">
+            <h3 class="name">방풍나물(150g)</h3>
+            <del class="discount">3,000원</del>
+            <p class="price"><span class="percent">15%</span>7,208원</p>
+            <span class="tag">Hansalim Only</span>
+          </a>
+        </div>
+        <div class="goods">
+          <a href="#" class="imgWrap">
+            <img src="./img/goods4.jpg" alt="" class="goodsImg">
+            <div class="state">BEST</div>
+            <button type="checkbox" class="cartPlus">장바구니</button>
+          </a>
+          <a href="#">
+            <h3 class="name">고구마찐빵(288g/4개)</h3>
+            <p class="price"><span class="percent">15%</span>7,208원</p>
+            <span class="tag">Hansalim Only</span>
+          </a>
+        </div>
       </div>
-      <div class="goods">
-        <a href="#" class="imgWrap">
-          <img src="./img/best10.jpg" alt="" class="goodsImg">
-          <div class="state">BEST</div>
-        </a>
-        <a href="#">
-          <h3 class="name">닭가슴살 곤약볶음밥 3종 (불고기맛/깍두기/카레)</h3>
-          <p class="price">2,200원</p>
-          <span class="tag">Kurly Only</span>
-        </a>
-        <button type="checkbox" class="cartPlus">장바구니</button>
+      <div class="goodsWrap">
+        <div class="goods">
+          <a href="#" class="imgWrap">
+            <img src="./img/goods1.jpg" alt="" class="goodsImg">
+            <div class="state">BEST</div>
+            <button type="checkbox" class="cartPlus">장바구니</button>
+          </a>
+          <a href="#">
+            <h3 class="name">사과(소2kg)</h3>
+            <del class="discount">10,000원</del>
+            <p class="price"><span class="percent">15%</span>7,208원</p>
+            <span class="tag">Hansalim Only</span>
+          </a>
+        </div>
+        <div class="goods">
+          <a href="#" class="imgWrap">
+            <img src="./img/goods2.jpg" alt="" class="goodsImg">
+            <div class="state">BEST</div>
+            <button type="checkbox" class="cartPlus">장바구니</button>
+          </a>
+          <a href="#">
+            <h3 class="name">찌개용앞다리/조각(300g/우리보리살림돼지)</h3>
+            <del class="discount">6,500원</del>
+            <p class="price"><span class="percent">15%</span>7,208원</p>
+            <span class="tag">Hansalim Only</span>
+          </a>
+        </div>
+        <div class="goods">
+          <a href="#" class="imgWrap">
+            <img src="./img/goods3.jpg" alt="" class="goodsImg">
+            <div class="state">BEST</div>
+            <button type="checkbox" class="cartPlus">장바구니</button>
+          </a>
+          <a href="#">
+            <h3 class="name">방풍나물(150g)</h3>
+            <del class="discount">3,000원</del>
+            <p class="price"><span class="percent">15%</span>7,208원</p>
+            <span class="tag">Hansalim Only</span>
+          </a>
+        </div>
+        <div class="goods">
+          <a href="#" class="imgWrap">
+            <img src="./img/goods4.jpg" alt="" class="goodsImg">
+            <div class="state">BEST</div>
+            <button type="checkbox" class="cartPlus">장바구니</button>
+          </a>
+          <a href="#">
+            <h3 class="name">고구마찐빵(288g/4개)</h3>
+            <p class="price"><span class="percent">15%</span>7,208원</p>
+            <span class="tag">Hansalim Only</span>
+          </a>
+        </div>
       </div>
-      <div class="goods">
-        <a href="#" class="imgWrap">
-          <img src="./img/best10.jpg" alt="" class="goodsImg">
-          <div class="state">BEST</div>
-        </a>
-        <a href="#">
-          <h3 class="name">닭가슴살 곤약볶음밥 3종 (불고기맛/깍두기/카레)</h3>
-          <p class="price">2,200원</p>
-          <span class="tag">Kurly Only</span>
-        </a>
-        <button type="checkbox" class="cartPlus">장바구니</button>
-      </div>
-
     </div>
   </section>
+
+  <section class="section02">
+    <div class="inner flex">
+      <div class="explainWrap">
+        <span class="subtitle">놓치기 아쉬운</span>
+        <h2>알뜰물품</h2>
+        <p class="explain">
+          가격인하 물품을<br>
+          지금 바로 이용해 보세요
+        </p>
+        <div class="moreBtn">더보기</div>
+        <div class="btnGroup">
+          <a href="#" class="beforeBtn">이전 보기</a>
+          <a href="#" class="playBtn">재생하기</a>
+          <a href="#" class="stopBtn">멈추기</a>
+          <a href="#" class="afterBtn">다음 보기</a>
+        </div>
+      </div>
+
+      <div class="sliderWrap">
+        <ul class="sliderList">
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section04">
+    <div class="inner flex">
+      <div class="explainWrap">
+        <span class="subtitle">놓치기 아쉬운</span>
+        <h2>알뜰물품</h2>
+        <p class="explain">
+          가격인하 물품을<br>
+          지금 바로 이용해 보세요
+        </p>
+        <div class="moreBtn">더보기</div>
+        <div class="btnGroup">
+          <a href="#" class="beforeBtn">이전 보기</a>
+          <a href="#" class="playBtn">재생하기</a>
+          <a href="#" class="stopBtn">멈추기</a>
+          <a href="#" class="afterBtn">다음 보기</a>
+        </div>
+      </div>
+
+      <div class="sliderWrap">
+        <ul class="sliderList">
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section06">
+    <div class="inner flex">
+      <div class="explainWrap">
+        <span class="subtitle">놓치기 아쉬운</span>
+        <h2>알뜰물품</h2>
+        <p class="explain">
+          가격인하 물품을<br>
+          지금 바로 이용해 보세요
+        </p>
+        <div class="moreBtn">더보기</div>
+        <div class="btnGroup">
+          <a href="#" class="beforeBtn">이전 보기</a>
+          <a href="#" class="playBtn">재생하기</a>
+          <a href="#" class="stopBtn">멈추기</a>
+          <a href="#" class="afterBtn">다음 보기</a>
+        </div>
+      </div>
+
+      <div class="sliderWrap">
+        <ul class="sliderList">
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+          <li>
+            <div class="goods">
+              <a href="#" class="imgWrap">
+                <img src="./img/goods3.jpg" alt="" class="goodsImg">
+                <div class="state">BEST</div>
+                <button type="checkbox" class="cartPlus">장바구니</button>
+              </a>
+              <a href="#" class="sliderText">
+                <h3 class="name">방풍나물(150g)</h3>
+                <del class="discount">3,000원</del>
+                <p class="price"><span class="percent">15%</span>7,208원</p>
+                <span class="tag">Hansalim Only</span>
+              </a>
+            </div>    
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="./js/header.js"></script>
   <script src="./js/main.js"></script>

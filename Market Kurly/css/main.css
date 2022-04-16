@@ -1,22 +1,21 @@
 .slider {
   position: relative;
-  width: 1920px;
-  height: 410px;
+  width: 1900px;
+  height: 370px;
   margin: 0 auto;
 }
-.stopPlay .btn_stop {
+.stopPlay .btn_stop,
+.stopPlay .btn_play {
   position: absolute;
-  bottom: 40px;
+  bottom: 28px;
   left: 19%;
-  background: url(../img/visualPlay.png) no-repeat center top;
   width: 30px;
   height: 30px;
   color: #fff;
 }
+.stopPlay .btn_stop {background: url(../img/main/visualPlay.png) no-repeat center top;}
 .stopPlay .btn_play {
-  background: url(../img/visualPlay.png) no-repeat center bottom;
-  width: 30px;
-  height: 30px;
+  background: url(../img/main/visualPlay.png) no-repeat center bottom;
   display: none;
 }
 .count_N {
@@ -24,7 +23,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 40px;
+  bottom: 28px;
   left: 21%;
   padding: 6px 10px;
   border-radius: 50px 0 0 50px;
@@ -35,16 +34,11 @@
 }
 .moreImg {
   position: absolute;
-  bottom: 40px;
+  bottom: 25px;
   left: 24%;
-  padding: 6px 9px;
-  border-radius: 0 50px 50px 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  font-size: 13px;
-  color: #fff;
 }
 .control .btn_left {
-  background: url(../img/visualArrP.png) no-repeat center bottom;
+  background: url(../img/main/visualArrP.png) no-repeat center bottom;
   width: 64px;
   height: 64px;
   position: absolute;
@@ -54,8 +48,12 @@
   font-size: 50px;
   text-indent: -9999px;
 }
+.control .btn_left:hover,
+.control .btn_left:active {
+  background: url(../img/main/visualArrP.png) no-repeat center top;
+}
 .control .btn_right {
-  background: url(../img/visualArrN.png) no-repeat center bottom;
+  background: url(../img/main/visualArrN.png) no-repeat center bottom;
   width: 64px;
   height: 64px;
   position: absolute;
@@ -65,33 +63,22 @@
   font-size: 50px;
   text-indent: -9999px;
 }
+.control .btn_right:hover,
+.control .btn_right:active {background: url(../img/main/visualArrN.png) no-repeat center top;}
 .slider_list {
   overflow: hidden;
-  width: 1920px;
-  height: 410px;
+  width: 1900px;
+  height: 370px;
 }
 .slider_list ul {
   position: relative;
   z-index: -1;
 }
 .slider_list ul li {
-  width: 1950px;
-  height: 495px;
+  width: 1900px;
+  height: 370px;
   position: absolute;
   top: 0;
   left: 0;
 }
 /* main end */
-
-/* section02 start */
-  .section02 {background: #edf9f9;}
-/* section02 end */
-
-/* section04 start */
-  .section04 {background: #fff8fa;}
-/* section04 end */
-
-/* section06 start */
-  .section06 {background: #f3f9f0;}
-/* section06 end */
-

@@ -13,7 +13,7 @@ $(document).ready(function(){
     })
     $('#shadow').on('click',function(e){
       e.preventDefault();
-      $('#closeBtn').trigger('click')
+      $('.closeBtn').trigger('click')
     })
     $('#deliveryPop').css({
       position:'fixed',
@@ -24,7 +24,7 @@ $(document).ready(function(){
     })
     $('#deliveryPop').show();
   })
-  $('#closeBtn').on('click',function(e){
+  $('.closeBtn').on('click',function(e){
     e.preventDefault();
     $('#deliveryPop').hide();
     $('#shadow').remove();
@@ -32,16 +32,19 @@ $(document).ready(function(){
 })
 // deliveryPop end
 
-// information start
+//subMenu start
 $(document).ready(function(){
-  $('#information').on('click', function(){
-    $('#information_sub').fadeToggle(300)
+  $('#subMenu').on('click', function(e){
+    e.preventDefault();
+    $('.sub_menu').fadeToggle()
   })
 })
-// information end
+// subMenu end
 
+// search start
 $(document).ready(function(){
-  $('#participate').on('click', function(){
-    $('#participate_sub').fadeToggle(300)
+  $('#search').on('click', function(){
+    $('.search_sub').fadeToggle(300)
   })
 })
+// search end

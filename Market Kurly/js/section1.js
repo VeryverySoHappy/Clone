@@ -1,34 +1,58 @@
+// main slider start
+var num=1;
 $(document).ready(function(){
-  $('.banner a:gt(0)').hide();
-  $('.list a').on('click',function(e){
+  $('.slider_list li:gt(0)').hide();
+  $('.btn_left').on('click',function(e){
     e.preventDefault();
-    $('.list a.on').removeClass('on');
-    var num =$(this).parent().index();
-    $('.banner a').hide();
-    $(this).addClass('on')
-    $('.banner a:eq('+num+')').show();
+    num--;
+    if(num<1){
+      num=8
+    }
+    move(num)
+  })
+  $('.btn_right').on('click',function(e){
+    e.preventDefault();
+    num++
+    if(num>8){
+      num=1
+    }
+    move(num)
   })
 
-  var number=0;
-  function myset(){
-    var currentNum=$('.list a.on').parent().index();
-    number=currentNum+1;
-    if(number>$('.list a').length-1){
-      number=0
-    }
-    $('.list a.on').removeClass('on');
-    $('.banner a').hide();
-    $('.list li:eq('+number+') > a').addClass('on')
-    $('.banner a:eq('+number+')').show();
-  }
-  var st=setInterval(myset,3000)
-  $('.stop').on('click',function(e){
+  $('.btn_stop').on('click',function(e){
     e.preventDefault()
-    clearInterval(st)
+    clearInterval(popupset)
+    $(this).css({
+      'display':'none'
+    })
+    $('.btn_play').css({
+      'display':'inline-block'
+    })
   })
-  $('.play').on('click',function(e){
+  $('.btn_play').on('click',function(e){
     e.preventDefault()
-    clearInterval(st)
-    st = setInterval(myset,3000)
+    popupset=setInterval(function(){
+      set()
+    },5000)
+    $(this).css({
+      'display':'none'
+    })
+    $('.btn_stop').css({
+      'display':'inline-block'
+    })
   })
+
+  var popupset = setInterval(function(){
+    set()
+  },5000)
 })
+
+function move(num){
+  $('.count').text(num);
+  $('.slider_list li').hide();
+  $('.slider_list li:eq('+(num-1)+')').show();
+}
+function set(){
+  $('.btn_right').trigger('click')
+}
+// main slider end

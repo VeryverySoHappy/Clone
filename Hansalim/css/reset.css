@@ -1,134 +1,25 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-ul {
-  list-style-type: none;
-}
-a{
-  text-decoration: none;
-  color: #000;
-}
-.skip, legend {
-  /* 스크립 리더기는 읽지만 우리 눈에는 안 보이는 것 */
-
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  /* text-indent:-9999px */
-  position: absolute;
-  left: -999px;
-  line-height: 0;
-  display: inline-block;
-  /* 인라인이나 인라인 블록으로 해도됌 */
-}
-.title {
-  font-weight: 300;
-}
-.title p {
-  padding-top: 20px;
-  margin-top: 20px;
-  border-top: 1px solid #ddd;
-}
-.title h2 {
-  font-size: 32px;
-  font-weight: 300;
-}
-.title strong {
-  font-weight: 900
-}
-.subtitle{
-  text-align: center;
-  color:#E187B8;
-}
-h2 {
-  font-size: 35px;
-  line-height: 1.8em;
-  font-weight: normal;
-  text-align: center;
-  margin-bottom: 5px;
-}
-.explain {
-  text-align: center;
-  color: #999;
-}
-.imgWrap {
-  display: inline-block;
-  position: relative;
-  width: 280px;
-  height: 320px;
-  overflow: hidden;
-}
-.imgWrap img{
-  width: 280px;
-  height: 320px;
-  object-fit: cover;
-}
-.goodsImg {
-  width: 300px;
-  height: 320px;
-  object-fit: none;
-  transition: all 0.3s ease-in-out;
-}
-.goodsImg:hover  {
-  transform: scale(1.05)
-}
-.name {
-  font-size: 17px;
-  /* line-height: 2.5em; */
-  line-height: 1.5em;
-  padding: 5px 0;
-}
-.discount {
-  font-size: 13px;
-  padding-right: 150px;
-  color: #999;
-}
-.price {
-  font-size: 22px;
-}
-.percent {
-  margin-right: 10px;
-  color: rgb(128, 195, 66);
-  font-weight: bold;
-}
-.tag {
-  display: inline-block;
+@charset "utf-8";
+body, div, header, footer, aside, article, nav, ul, li, ol, form, span, input, img, p, span, em,
+strong, h1, h2, h3, a {margin: 0; padding: 0; }
+header, footer, aside, article, nav, section {display: block;}
+body, input, select {
   font-size: 12px;
-  padding: 5px;
-  /* border: 3px solid #5f0080; */
-  background-color: #f5f5f5;
-  border-radius: 10px;
-  margin-top: 15px;
-  color: #5f0080;
+  color: #222;
+  font-family: 'Nanum','나눔고딕','돋움','dotum',sans-serif;
 }
-.cartPlus {
-  background: url(../img/btnCartList.png) no-repeat 0 0;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  bottom: 55px;
-  right: 0;
-  border: none;
-  display: inline-block;
-  text-indent: -9999px;
+ul, ol {list-style: none;}
+em, address, i {font-style: normal;}
+strong {font-weight: 400;}
+img, fieldset {border: 0 none;}
+img, input, select {vertical-align: middle;}
+a:link,
+a:visited{
+  color: #222;
+  text-decoration: none;
 }
-.cartPlus:hover{
-  background: url(../img/btnCartList.png) no-repeat 0, 30px;
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-}
-.cartPlus:active {
-  background: url(../img/btnCartList.png) no-repeat 0, 60px;
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-}
-.moreLink {
-  display: inline-block;
-  padding: 8px 50px;
-  margin-top: 30px;
-  border: 1px solid #ddd;
-  background-color: #fff;
+a:hover,
+a:active,
+a:focus {
+  color: #222;
+  text-decoration: underline;
 }

@@ -4,192 +4,262 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="./img/header/logo_icon.png">
   <link rel="stylesheet" type="text/css" href="./css/common.css">
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <link rel="stylesheet" type="text/css" href="./css/header.css">
-  <link rel="stylesheet" type="text/css" href="./css/section1.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
   <link rel="stylesheet" type="text/css" href="./css/section2.css">
   <link rel="stylesheet" type="text/css" href="./css/section3.css">
   <link rel="stylesheet" type="text/css" href="./css/section4.css">
   <link rel="stylesheet" type="text/css" href="./css/section5.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">  <title>Hansalim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <title>마켓컬리 &#58;&#58; 내일의 장보기, 마켓컬리</title>
 </head>
 <body>
   <header>
-    <div class="inner">
-      <div class="headerTop">
-        <div class="headerL">
-          <a href="#">
-            <img src="./img/logo.png" alt="MARKET Kurly logo" width="105px" height="79px">
-            <h1 class="skip">MARKET Kurly</h1>
+    <div class="headerTop">
+      <ul>
+        <li><a href="javascript:void(0)" class="headerTop_li purple">로그인</a></li>
+        <li><a href="javascript:void(0)" class="headerTop_li">나의한살림</a></li>
+        <li><a href="javascript:void(0)" class="headerTop_li">조합원센터</a></li>
+        <li><a href="javascript:void(0)" class="headerTop_li">매장안내</a></li>
+      </ul>
+    </div>
+    <div class="headerM">
+      <div class="headerL">
+        <a href="javascript:void(0)" class="logo">
+          <img src="./img/header/logo.png" alt="MARKET Kurly logo" width="105px" height="79px">
+          <h1 class="skip">MARKET Kurly</h1>
+        </a>
+        <!-- delivery start -->
+        <div class="delivery">
+          <a href="#" class="deliveryBtn">
+            <span><span class="purple">샛별·택배</span> 배송안내 <i class="fa-solid fa-angle-right fa"></i></span>
           </a>
-          <!-- delivery start -->
-          <div class="delivery">
-            <a href="#" class="deliveryBtn">
-              <span><span class="purple">샛별·택배</span> 배송안내 <i class="fa-solid fa-angle-right fa"></i></span>
+          <!-- deliveryPop start -->
+          <div class="deliveryPop" id="deliveryPop">
+            <a href="#" id="closeBtn" class="closeBtn">
+              <img src="./img/btnPopClose.png" alt="">
             </a>
-            <!-- deliveryPop start -->
-            <div class="deliveryPop" id="deliveryPop">
-              <a href="#" class="closeBtn" id="closeBtn">
-                <img src="./img/btnPopClose.png" alt="">
-              </a>
-              <h2>
-                주문부터 배송까지<br>
-                <b>한 눈에 보기</b>
-              </h2>
-              <table>
-                <tr>
-                  <th>
-                    수도권<br>
-                    충청
-                  </th>
-                  <td>샛별배송</td>
-                  <td>
-                    <strong>오늘 밤 11시 전</strong> 주문<br>
-                    <strong>내일 아침 7시 전</strong> 문 앞 도착
-                  </td>
-                </tr>
-                <tr>
-                  <th rowspan="2">대구</th>
-                  <td>샛별배송</td>
-                  <td>
-                    <strong>오늘 밤 11시 전</strong> 주문<br>
-                    <strong>내일 아침 7시 전</strong> 문 앞 도착
-                  </td>
-                </tr>
-                <tr>
-                  <td>택배배송</td>
-                  <td>
-                    <strong>오늘 밤 8시~10시 전</strong> 주문<br>
-                    <strong>내일 밤 12시 전</strong> 문 앞 도착
-                  </td>
-                </tr>
-                <tr>
-                  <th rowspan="2">
-                    부산<br>
-                    울산
-                  </th>
-                  <td>샛별배송</td>
-                  <td>
-                    <strong>오늘 밤 6시 전</strong> 주문<br>
-                    <strong>내일 아침 8시 전</strong> 문 앞 도착
-                  </td>
-                </tr>
-                <tr>
-                  <td>택배배송</td>
-                  <td>
-                    <strong>오늘 밤 6시~10시 전</strong> 주문<br>
-                    <strong>내일 밤 12시 전</strong> 문 앞 도착
-                  </td>
-                </tr>
-                <tr>
-                  <th>그 외 지역</th>
-                  <td>택배배송</td>
-                  <td>
-                    <strong>오늘 밤 10시 전</strong> 주문<br>
-                    <strong>내일 밤 12시 전</strong> 문 앞 도착
-                  </td>
-                </tr>
-              </table>
-              <p>*일부 지역의 경우, 주문시간에 따라 배송방법이 달라집니다.</p>
-              <div class="deliverySelect">
-                <a href="#" class="deliveryNo deli">취소</ㅁ>
-                <a href="#" class="deliveryYes deli">확인</a>
-              </div>
+            <h2>
+              주문부터 배송까지<br>
+              <b>한 눈에 보기</b>
+            </h2>
+            <table>
+              <tr>
+                <th>
+                  수도권<br>
+                  충청
+                </th>
+                <td>샛별배송</td>
+                <td>
+                  <strong>오늘 밤 11시 전</strong> 주문<br>
+                  <strong>내일 아침 7시 전</strong> 문 앞 도착
+                </td>
+              </tr>
+              <tr>
+                <th rowspan="2">대구</th>
+                <td>샛별배송</td>
+                <td>
+                  <strong>오늘 밤 11시 전</strong> 주문<br>
+                  <strong>내일 아침 7시 전</strong> 문 앞 도착
+                </td>
+              </tr>
+              <tr>
+                <td>택배배송</td>
+                <td>
+                  <strong>오늘 밤 8시~10시 전</strong> 주문<br>
+                  <strong>내일 밤 12시 전</strong> 문 앞 도착
+                </td>
+              </tr>
+              <tr>
+                <th rowspan="2">
+                  부산<br>
+                  울산
+                </th>
+                <td>샛별배송</td>
+                <td>
+                  <strong>오늘 밤 6시 전</strong> 주문<br>
+                  <strong>내일 아침 8시 전</strong> 문 앞 도착
+                </td>
+              </tr>
+              <tr>
+                <td>택배배송</td>
+                <td>
+                  <strong>오늘 밤 6시~10시 전</strong> 주문<br>
+                  <strong>내일 밤 12시 전</strong> 문 앞 도착
+                </td>
+              </tr>
+              <tr>
+                <th>그 외 지역</th>
+                <td>택배배송</td>
+                <td>
+                  <strong>오늘 밤 10시 전</strong> 주문<br>
+                  <strong>내일 밤 12시 전</strong> 문 앞 도착
+                </td>
+              </tr>
+            </table>
+            <p>*일부 지역의 경우, 주문시간에 따라 배송방법이 달라집니다.</p>
+            <div class="deliverySelect">
+              <a href="#" class="deliveryNo deli closeBtn">취소</ㅁ>
+              <a href="#" class="deliveryYes deli closeBtn">확인</a>
             </div>
           </div>
-          <!-- deliveryPop end -->
         </div>
-        <div class="headerR">
-          <a href="#">회원가입</a>
-          <a href="#">로그인</a>
-          <a href="#" class="information" id="information">고객센터 <i class="fa-solid fa-angle-down fa"></i>
-            <ul class="information_sub" id="information_sub">
-              <li><a href="#">공지사항</a></li>
-              <li><a href="#">자주묻는질문</a></li>
-              <li><a href="#">1:1 문의</a></li>
-              <li><a href="#">대량주문 문의</a></li>
-              <li><a href="#">상품제안</a></li>
-              <li><a href="#">에코포장 피드백</a></li>
-            </ul>
-          </a>
-          <a href="#">매장안내</a>
-        </div>
+        <!-- deliveryPop end -->
       </div>
-      <div class="gnb">
-        <ul>
-          <li class="allMenu"><a href="#"><i class="fa-solid fa-bars fa"></i>전체 카테고리</a>
-            <!-- <ul>
-              <li><a href="#">쌀/잡곡</a>
+    </div>
+    <div class="gnb">
+      <ul class="gnb_l">
+        <li class="allMenu">
+          <a href="#" id="subMenu"><i class="fa-solid fa-bars fa"></i>전체 카테고리</a>
+          <!-- sub_menu start -->
+          <div class="sub_menu">
+            <ul class="sub">
+              <li class="sub_l">
+                <a href="#" class="sub_title">채소</a>
                 <ul>
-                  <li><a href="#">멥쌀/찹쌀</a></li>
-                  <li><a href="#">잡곡/깨</a></li>
-                  <li><a href="#">콩류</a></li>
-                  <li><a href="#">혼합곡/보리/유색미</a></li>
+                  <li><a href="#">친환경</a></li>
+                  <li><a href="#">고구마·감자·당근</a></li>
+                  <li><a href="#">시금치·쌈채소·나물</a></li>
                 </ul>
               </li>
-              <li><a href="#">채소/버섯</a></li>
-              <li><a href="#">과일/견과</a></li>
-              <li><a href="#">축산/축산가공</a></li>
-              <li><a href="#">수산/수산가공</a></li>
-              <li><a href="#">반찬/양념/가루</a></li>
-              <li><a href="#">식사대용/간편식</a></li>
-              <li><a href="#">간식/음료/유제품</a></li>
-              <li><a href="#">건강/차</a></li>
-              <li><a href="#">화장품/오가닉코튼</a></li>
-              <li><a href="#">주방/욕실/세정</a></li>
-            </ul> -->
-          </li>
-          <li><a href="#">신상품</a></li>
-          <li><a href="#" >베스트</a></li>
-          <li><a href="#" class="circle">알뜰쇼핑</a></li>
-          <li><a href="#" class="circle">특가/혜택</a></li>
-          <li><a href="#">더보기 <i class="fa-solid fa-angle-down fa"></i></a>
-            <ul class="more_sub">
-              <li><a href="#">신규물품제안</a></li>
-              <li><a href="#">참여이벤트</a></li>
+              <li class="sub_l">
+                <a href="#" class="sub_title">과일·견과·쌀</a>
+                <ul>
+                  <li><a href="#">친환경</a></li>
+                  <li><a href="#">제철과일</a></li>
+                  <li><a href="#">국산과일</a></li>
+                  <li><a href="#">수입과일</a></li>
+                </ul>
+              </li>
+              <li class="sub_l">
+                <a href="#" class="sub_title">수산·해산·건어물</a>
+                <ul>
+                  <li><a href="#">제철수산</a></li>
+                  <li><a href="#">생선류</a></li>
+                  <li><a href="#">굴비·반건류</a></li>
+                  <li><a href="#">오징어·낙지·문어</a></li>
+                  <li><a href="#">새우·게·랍스터</a></li>
+                </ul>
+              </li>
+              <li class="sub_l">
+                <a href="#" class="sub_title">국·반찬·메인요리</a>
+                <ul>
+                  <li><a href="#">국·탕·찌개</a></li>
+                  <li><a href="#">밑반찬</a></li>
+                  <li><a href="#">김치·젓갈·장류</a></li>
+                </ul>
+              </li>
+              <li class="sub_l">
+                <a href="#" class="sub_title">국·반찬·메인요리</a>
+                <ul>
+                  <li><a href="#">국·탕·찌개</a></li>
+                  <li><a href="#">밑반찬</a></li>
+                  <li><a href="#">김치·젓갈·장류</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
-        <div class="gnbR">
-          <form method="post" name="searchfrm" class="search">
+          </div>
+          <!-- sub_menu end -->
+        </li>
+        <li><a href="#">신상품</a></li>
+        <li><a href="#" >베스트</a></li>
+        <li><a href="#" class="circle">알뜰쇼핑</a></li>
+        <li><a href="#" class="circle">특가/혜택</a></li>
+      </ul>
+      <ul class="gnb_r">
+        <li class="gnb_search">
+          <form method="post" name="searchfrm" id="search" class="search">
             <input type="text" class="input_val" name="inval" placeholder="🎉 SPRING FESTA  최대 55% 할인"/>
             <input type="submit" value="검색"/>
           </form>
-          <a href="#" class="cart">
-            <img src="./img/btnCart.png" alt="">
+          <div class="search_sub">
+            <div class="search_subT">
+              <div class="search_subTL">
+                <div class="search_subTitle">
+                  <h3>최근 검색어</h3>
+                  <button>전체삭제</button>
+                </div>
+                <ul>
+                  <li>최근 검색내역이 없습니다 </li>
+                </ul>
+              </div>
+              <div class="search_subTR">
+                <div class="search_subTitle">
+                  <h3>인기 검색어</h3>
+                  <p>22.04.20기준</p>
+                </div>
+                <ul>
+                  <li><span class="rank">1</span>두부</li>
+                  <li><span class="rank">2</span>김</li>
+                  <li><span class="rank">3</span>계란</li>
+                  <li><span class="rank">4</span>무</li>
+                  <li><span class="rank">5</span>쌀</li>
+                  <li><span class="rank">6</span>우유</li>
+                  <li><span class="rank">7</span>양파</li>
+                  <li><span class="rank">8</span>현미</li>
+                  <li><span class="rank">9</span>떡</li>
+                  <li><span class="rank">10</span>사과</li>
+                </ul>
+              </div>
+            </div>
+            <div class="search_subB">
+              <h3>진행중인 기획전</h3>
+              <div class="searchImg">
+                <span class="searchImgL">
+                  <img src="./img/header/search1.jpg" alt="">
+                  <b>이맘때 참외</b>
+                </span>
+                <span class="searchImgR">
+                  <img src="./img/header/search2.jpg" alt="">
+                  <b>4월 이맘때 이 물품</b>
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#" class="gnb_map">배송지 등록하기</a></li>
+        <li><a href="#" class="gnb_wish">위시리스트</a></li>
+        <li class="cart_wrap">
+          <a href="#">
+            <div class="cart">장바구니</div>
             <div class="cartCount">0</div>
           </a>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </header>
   <section class="section01">
-    <div id="bannerwrap">
-      <div class="banner">
-        <a href="#" class="on"><img src="./img/main1.webp" alt=""></a>
-        <a href="#"><img src="./img/main2.webp" alt=""></a>
-        <a href="#"><img src="./img/main3.webp" alt=""></a>
-        <a href="#"><img src="./img/main4.webp" alt=""></a>
-        <a href="#"><img src="./img/main5.webp" alt=""></a>
-        <a href="#"><img src="./img/main6.webp" alt=""></a>
-        <a href="#"><img src="./img/main7.webp" alt=""></a>
-        <a href="#"><img src="./img/main8.webp" alt=""></a>
+    <div class="slider">
+      <h2 class="skip">한살림 장보기 메인</h2>
+      <div class="stopPlay">
+        <a href="#" class="btn_stop"><span class="skip">알림판정지</span></a>
+        <a href="#" class="btn_play"><span class="skip">알림판재생</span></a>
       </div>
-      <ul class="list">
-        <li><a href="#" class="on">제철수산물</a></li>
-        <li><a href="#">한살림펀딩</a></li>
-        <li><a href="#">딸기</a></li>
-        <li><a href="#">후기이벤트</a></li>
-        <li><a href="#">가격인하</a></li>
-        <li><a href="#">사전예약</a></li>
-        <li><a href="#">가치차린</a></li>
-        <li><a href="#">봄철건강</a></li>
-      </ul>
-      <div class="btn">
-        <a href="#" class="stop"><i class="fa-solid fa-stop fa"></i><span class="skip">알림판정지</span></a>
-        <a href="#" class="play"><i class="fa-solid fa-play fa"></i><span class="skip">알림판재생</span></a>
+      <div class="count_N">
+        <span class="count">1</span><span class="slider_total">/13</span>
       </div>
-    </div>
+      <a href="#" class="moreImg"><img src="./img/main/visualMore.png" alt=""></a>
+      <div class="control">
+        <a href="#" class="btn_left">알림판이전보기</a>
+        <a href="#" class="btn_right">알림판다음보기</a>
+      </div>
+      <div class="slider_list">
+        <ul>
+          <li class="on"><a href="#"><img src="./img/main/main1.webp" alt=""></a></li>
+          <li><a href="#"><img src="./img/main/main2.webp" alt=""></a></li>
+          <li><a href="#"><img src="./img/main/main3..webp" alt=""></a></li>
+          <li><a href="#"><img src="./img/main/main4.jfif" alt=""></a></li>
+          <li><a href="#"><img src="./img/main/main5.webp" alt=""></a></li>
+          <li><a href="#"><img src="./img/main/main6.webp" alt=""></a></li>
+          <li><a href="#"><img src="./img/main/main7.webp" alt=""></a></li>
+          <li><a href="#"><img src="./img/main/main8.jfif" alt=""></a></li>
+        </ul>
+      </div>
+    </div>  
   </section>
   <section class="section02">
     <div class="inner">

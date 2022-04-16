@@ -12,11 +12,6 @@
   cursor: pointer;
   transition: .3s;
 }
-.purple {
-  color: #5f0080;
-  font-weight: bold;
-  margin-right: 8px;
-}
 .section03 .button_wrap {
   text-align: center;
 }
