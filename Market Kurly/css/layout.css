@@ -160,6 +160,7 @@ td:last-child {
   padding-top: 30px;
   background-color: #fff;
   border-top: 1px solid #f4f4f4;
+  z-index: 9999;
 }
 .sub {
   display: flex;
@@ -366,11 +367,13 @@ footer {
   height: 280px;
   margin: 0 auto;
 }
-.footer_inner span:first-child {
+.footer_inner span:first-child, 
+.footer_bot span:first-child {
   float: left;
   width: 70%;
 }
-.footer_inner span:last-child{
+.footer_inner span:last-child,
+.footer_bot span:last-child {
   float: right;
   width: 30%;
 }
@@ -438,4 +441,24 @@ footer > div:nth-child(2) ul {
   line-height: 30px;
   position: relative;
 }
+.footer_bot {
+  width: 1200px;
+  margin: 0 auto; 
+}
+.footer_bot {margin-top: 1%;}
+.footer_bot dt {float: left;}
+.footer_sns li {float: left;}
+.footer_sns li a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-right: 12px;
+  text-indent: -9999rem;
+}
+.footer_sns li:first-child a {background: url(../img/header/ico_instagram.webp) no-repeat 0 0;}
+.footer_sns li:nth-child(2) a {background: url(../img/header/ico_fb.webp) no-repeat 0 0;}
+.footer_sns li:nth-child(3) a {background: url(../img/header/ico_blog.webp) no-repeat 0 0;}
+.footer_sns li:nth-child(4) a {background: url(../img/header/ico_naverpost.webp) no-repeat 0 0;}
+.footer_sns li:last-child a {background: url(../img/header/ico_youtube.webp) no-repeat 0 0;}
+
 /* footer end */
