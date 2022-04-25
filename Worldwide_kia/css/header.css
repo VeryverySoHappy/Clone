@@ -1,0 +1,64 @@
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 999;
+}
+header > div {
+  float: left;
+  height: 80px;
+}
+.logo a {
+  display: inline-block;
+  width: 100px;
+  height: 80px;
+  padding: 0 20%;
+  line-height: 80px;
+}
+header > div > h1 > a {}
+header > nav {
+  float: right;
+  width: 35%;
+  height: 80px;
+}
+nav:hover header {
+  background: #000;
+}
+nav .gnb1 {
+  float: left;
+  width: 80%;
+  height: 80px;
+}
+nav .gnb1 > li {
+  float: left;
+  padding: 0 3%;
+  font-size: 1.3rem;
+  line-height: 80px;
+}
+nav .gnb1 > li > a {
+  color: #fff;
+}
+nav .gnb2 {
+  position: absolute;
+  padding-top: 2%;
+  display: none;
+}
+nav .gnb2 > li {
+  float: left;
+  padding: 0 5%;
+  border: 1px solid #000;
+}
+.aside {
+  float: right;
+  width: 20%;
+}
+.aside li {
+  float: left;
+  font-size: 30px;
+}
+.aside i {
+  font-size: 2.5rem;
+  line-height: 80px;
+  padding: 0 10%;
+  color: #fff;
+}
