@@ -239,7 +239,34 @@ input[id=slide1_3]:checked ~ .slideBtn label[for=slide1_3]{
 /* section02 end */
 
 /* section03 start */
-.section03 {
+  .section03{
+    background-color: rgba(244, 244, 244, 0.5);
+  }
+  .section03_inner {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #000;
+  }
+  .section03_inner h2 {
+    font-size: 2rem;
+  }
+  .section03_inner h2 span {
+    display: block;
+    font-weight: bold;
+  }
+  .item {}
+  .item  img {}
+  .item  div {}
+  .item  div  h3 {}
+  .item  div  span {}
+  .items {}
+  .items li {}
+  .items li a {}
+  .items li h3 {}
+/* section03 end */
+
+/* section04 start */
+.section04 {
   width: 1200px;
   height: 1400px;
   position: relative;
@@ -248,7 +275,7 @@ input[id=slide1_3]:checked ~ .slideBtn label[for=slide1_3]{
   padding-top: 30px;
   overflow: hidden;
 }
-.section03 h2 {
+.section04 h2 {
   margin-bottom: 90px;
 }
 .product_list {
@@ -304,4 +331,4 @@ input[id=slide1_3]:checked ~ .slideBtn label[for=slide1_3]{
   display: none;
 }
 
-/* section03 end */
+/* section04 end */

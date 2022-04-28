@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,19 +26,26 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
   <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <link rel="stylesheet" type="text/css" href="./css/common.css">
-  <link rel="stylesheet" type="text/css" href="./css/header.css">
+  <link rel="stylesheet" type="text/css" href="./css/layout.css">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" type="text/css" href="./css/main.css">
   <title>worldwide kia</title>
 </head>
+
 <body>
   <div id="skipMenu">
     <a href="#container">본문바로가기</a>
     <a href="#gnb">주메뉴바로가기</a>
   </div>
 
-  <div class="wrap">
+  <div id="wrap">
     <header id="gnb">
-      <div><h1 class="logo"><a href="javascript:void(0)">기아로고</a></h1></div>
+      <div>
+        <h1 class="logo"><a href="javascript:void(0)">기아로고</a></h1>
+      </div>
       <nav>
         <!-- gnb1 start -->
         <ul class="gnb1">
@@ -87,69 +95,123 @@
         </span>
       </nav>
     </header>
+    <nav class="slider_nav">
+      <ul>
+        <li class="active"><a href="">section01</a></li>
+        <li><a href="">section02</a></li>
+        <li><a href="">section03</a></li>
+        <li><a href="">section04</a></li>
+        <li><a href="">section05</a></li>
+      </ul>
+    </nav>
     <section class="section01">
       <div class="video_box">
-        <!-- <video src="./img/main_video.mp4" autoplay loop muted ></video> -->
-        <video src="./img/main_video.mp4" loop muted ></video>
-      </div>
-      <div class="start_button">
-        <a href="javascript:void(0)"><i class="far fa-play-circle"></i><div>더 보기</div></a>
+        <video src="./img/main_video.mp4" autoplay loop muted ></video>
       </div>
       <div class="text_wrap">
         <h2>Innovation inspired by nature</h2>
         <p>지속가능한 미래를 향한 기아의 여정에 함께 해주세요</p>
-        <a href="javascript:void(0)">아래로가기 버튼</a>
+        <a href="javascript:void(0)"><i class="fa-solid fa-angle-down fa"></i></a>
       </div>
-    </section>
-    <section class="section02">
-      <h2>BEST Kia</h2>
-      <ul>
-        <li><a href="javascript:void(0)"></a></li>
-        <li><a href="javascript:void(0)"></a></li>
-        <li><a href="javascript:void(0)"></a></li>
-        <li><a href="javascript:void(0)"></a></li>
-        <li><a href="javascript:void(0)"></a></li>
-        <li><a href="javascript:void(0)"></a></li>
-        <li><a href="javascript:void(0)"></a></li>
-        <li><a href="javascript:void(0)"></a></li>
-      </ul>
     </section>
     <section class="section03">
-      <h2>EVENT Kia</h2>
-      <div></div>
-      <h2>CHANNEL Kia</h2>
-      <div></div>
-    </section>
-    <section class="section04">
-      <h2>Kia ESG</h2>
-
-    </section>
-    <section class="section05">
-    </section>
-    <section class="section05">
-      <div>
-        <h2>Kia NEWS</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/main/wave.jpg" alt="inspiration">
+            <div class="slide01">
+              <h3>Movement that inspires</h3>
+              <h4>Kia</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/main/127398769vmnl.jpg" alt="history">
+            <div class="slide02">
+              <h3>Movement that inspires</h3>
+              <p>
+                사람들을 움직이게 하는 것은<br>
+                우리 업(業)의 중심이었으며<br>
+                이는 미래 자동차 산업 변화에도<br>
+                변치 않을 것입니다.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/main/127398769qauh.jpg" alt="progress">
+            <div>
+              <p>
+                지금까지 인류는 이동을 통해 진보를 이루어 왔습니다.<br>
+                미지의 세계에 대한 인간의 호기심은<br>
+                이동에 대한 욕구로 이어졌고<br>
+                인류는 더 나은 곳에 정착하기 위해 끊임없이<br>
+                이동해왔습니다.<br>
+              </p>
+              <p>
+                우리는 움직임을 통해<br>
+                새로운 사람을 만나고 새로운 생각을 하고<br>
+                비로소 새로운 세상을 마주합니다.<br>
+                우리는 움직일 때 영감을 얻습니다.<br>
+              </p>
+              <p>
+                움직임은 환경, 주변, 그리고 나 자신을 끊임없이<br>
+                변화시킵니다.<br>
+              </p>
+              <p>
+                <strong>
+                  우리는 움직일 때 새로운 생각을 할 수 있습니다.<br>
+                  움직임은 곧 새로운 생각, 영감, 그리고 진보입니다.<br>
+                </strong>
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/main/127398768kfdl (1).jpg" alt="ideas">
+            <div>
+              <h3>
+                Movement inspires ideas .<br>
+                우리는 새로운 생각이 시작되는 공간과 시간을 만듭니다.
+              </h3>
+              <p>
+                우리는 사람들이 움직임 속에서 영감을 얻는다고 믿습니다.<br>
+                새로운 생각이 시작되는 공간과 시간을 만드는 것,<br>
+                이것이 바로 우리가 존재하는 이유입니다.<br>
+              </p>
+              <p>
+                우리는 당신이 기아를 만나는 모든 순간 영감을 얻을 수 있도록 제품을 만들며,<br>
+                더 나아가 이를 직접 경험할 수 있는 공간을 창조합니다.<br>
+              </p>
+              <p>
+                또한 가족, 친구와 함께 하거나 여행할 때, 휴식을 취할 때처럼<br>
+                당신에게 영감을 주는 소중한 시간을 더 많이 가질 수 있도록<br>
+                의미 있고 편리한 서비스를 제공합니다.<br>
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/main/127398768akrw.jpg" alt="mobility">
+            <div>
+              <h3>
+                새로운 기아 브랜드를 통해,<br>
+                우리는 자동차 제조회사를 넘어서 모빌리티 브랜드로 도약합니다.
+              </h3>
+              <p>
+                고객의 모빌리티 니즈를 가장 잘 이해하는 (제품) 브랜드,<br>
+                또한 모두에게 가장 소중한 '시간'을 가치 있게 만드는 (솔루션) 브랜드.
+              </p>
+              <p>
+                이는 단순한 선언이 아닙니다.<br>
+                우리의 모든 생각과 행동을 통해 추구해 나갈 우리 기아의 존재 이유입니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div>
-        <h2>NOTICE</h2>
-        <ul>
-          <li>
-            <div>개인정보 처리방침 변경</div>
-            <div>2022.04.20</div>
-          </li>
-          <li>
-            <div>개인정보 처리방침 변경</div>
-            <div>2022.04.20</div>
-          </li>
-          <li>
-            <div>개인정보 처리방침 변경</div>
-            <div>2022.04.20</div>
-          </li>
-          <li>
-            <div>개인정보 처리방침 변경</div>
-            <div>2022.04.20</div>
-          </li>
-        </ul>
+      <div class="explain">
+        <h2>Brand Story</h2>
+        <a href="javascript:void(0)">Brand ShowCase <i class="fa-solid fa-angle-right fa"></i></a>
       </div>
     </section>
     <footer>
@@ -238,7 +300,11 @@
       </div>
     </footer>
   </div>
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=754331a7ccc77a28f6fe46dccec5d07a"></script>
-  <script src="./js/header.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/section03.js"></script>
+  <script src="./js/layout1.js"></script>
+  <script src="./js/main.js"></script>
 </body>
+
 </html>
