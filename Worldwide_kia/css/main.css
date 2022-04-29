@@ -50,6 +50,7 @@
 /* section03 start */
 .section03 {
   position: relative;
+  background-color: rgb(22, 22, 22);
 }
 /* section03_swiper start*/
 .swiper {
@@ -85,14 +86,28 @@
 }
 .slide01 h3 {font-size: 3vw;}
 .slide01 h4 {font-size: 1.8vw;}
+.slide02,
+.slide03,
+.slide04,
+.slide05 {
+  text-align: center;
+  line-height: 1.3vw;
+}
 .slide02 {
   right: 10%;
-  text-align: center;
-  line-height: 1.5vw;
 }
-.slide02 h3 {
+.slide02 h3,
+.slide04 h3 {
   font-size: 1.8vw;
   margin-bottom: 8%;
+}
+.slide04 {
+  left: 10%;
+}
+.slide05 h3 {
+  font-size: 1.5vw;
+  line-height: 2.5vw;
+  margin-bottom: 5%;
 }
 .swiper-button-next, .swiper-button-prev {
   top: 50%;
