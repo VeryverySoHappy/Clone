@@ -100,4 +100,39 @@ nav .gnb2 > li {
   transform: scale(0.4);
 }
 /* footer start */
+footer {
+  width: 100%;
+  background-color: rgb(77, 77, 77);
+}
+footer > div {
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  color: #fff;
+  border: 1px solid #000;
+}
+footer .logo {
+  background: url(../img/logo_w.webp) no-repeat center bottom;
+  width: 100px;
+  line-height: 100px;
+  text-indent: -9999px;
+}
+footer > div > p {
+  line-height: 1.5vw;
+  letter-spacing: 2px;
+}
+footer .sns {
+  float: left;
+  display: flex;
+  width: 10%;
+  padding: 3% 0 0 0;
+}
+footer .sns img {width: 80%;}
+footer span {
+  height: 200px;
+}
+footer span ul {
+  float: left;
+  padding: 0 15%;
+}
 /* footer end */

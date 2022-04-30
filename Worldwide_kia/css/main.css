@@ -158,54 +158,95 @@ video {
   .section04 {
     width: 100%;
     height: 100vh;
-    background-color: #242424;
+    background-color: #111318;
     color: rgb(55, 55, 55);
     position: relative;
   }
   .section04 h2 {
-    float: left;
-    width: 40%;
-    height: 100vh;
-    font-size: 3vw;
+    float: right;
+    margin: 8%;
+    box-sizing: border-box;
+    font-size: 3.5vw;
     font-weight: normal;
-    border-bottom: 2px solid #fff;
+    color: #a1a1a1;
+    position: relative;
+  }
+  .section04 h2:after {
+    position: absolute;
+    bottom: -20%;
+    right: 0%;
+    content: '';
+    width: 80%;
+    height: 1px;
+    background-color: #fff;
   }
   .section04 ul{
+    float: left;
     position: absolute;
     top: 50%;
-    right: 0%;
+    left: 5%;
     transform: translateY(-50%);
-    float: right;
     width: 60%;
   }
   .section04 li {
     position: relative;
     float: left;
-    width: 46%;
-    height: 200px;
-    box-sizing: border-box;
+    margin: 2%;
   }
-  .section04 a:after {
+  .section04 .last_li {
+    width: 500px;
+    height: 270px;
+    background-color: rgba(0,0,0,0.3);
+    transition: 1s;
+    position: relative;
+  }
+  .section04 li a {transition: .5s;}
+  .section04 li:hover a:after {
     content: '';
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(15, 15, 15, 0.099);
-    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
   }
   .section04 img {
     top: 0;
     left: 0;
     width: 500px;
-    height: 200px;
+    height: 270px;
   }
-  .section04 h3 {
+  .section04 li h3 {
+    display: block;
     position: absolute;
-    padding: 5%;
-    color: #dfdfdf;
     top: 0;
+    left: 0;
+    padding: 5%;
+    color: #fff;
+    font-size: 1.5vw;
+    z-index: 10;
+  }
+  .section04 li:last-child h3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .section04 li p {
+    display: none;
+    position: absolute;
+    top: 30%;
+    padding: 5%;
+    box-sizing: border-box;
+    color: rgb(202, 202, 202);
+    font-size: 0.8vw;
+    line-height: 1.5vw;
+    z-index: 11;
+  }
+  .section04 li:hover p {display: block;}
+  .section04 .link {
+    position: absolute;
+    bottom: 0;
     left: 0;
   }
 /* section04 end */
