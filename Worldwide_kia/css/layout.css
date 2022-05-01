@@ -1,3 +1,21 @@
+.progress {
+  position: fixed;
+  width: 100%;
+  height: 5px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.bar {
+  position: absolute;
+  width: 50%;
+  height: 5px;
+  top: 0;
+  left: 0;
+  background-color: rgb(217, 217, 217);
+  z-index: 11;
+}
 /* header start */
 header {
   position: fixed;
@@ -102,37 +120,53 @@ nav .gnb2 > li {
 /* footer start */
 footer {
   width: 100%;
+  height: 350px;
   background-color: rgb(77, 77, 77);
-}
-footer > div {
-  width: 90%;
-  height: 500px;
-  margin: 0 auto;
   color: #fff;
-  border: 1px solid #000;
 }
-footer .logo {
+footer .footer_wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+footer .fl {
+  float: left;
+  width: 25%;
+}
+.fl .logo {
   background: url(../img/logo_w.webp) no-repeat center bottom;
   width: 100px;
-  line-height: 100px;
+  padding: 5% 0;
   text-indent: -9999px;
 }
-footer > div > p {
-  line-height: 1.5vw;
-  letter-spacing: 2px;
+.fl p {
+  padding: 3% 0 5% 0;
 }
-footer .sns {
+.fl .sns {
   float: left;
   display: flex;
   width: 10%;
   padding: 3% 0 0 0;
 }
-footer .sns img {width: 80%;}
-footer span {
+.sns img {width: 100%;}
+.fl > div {
+  width: 100%;
+}
+footer .fnb {
+  float: right;
+  width: 75%;
+  height: 200px;
+  padding-top: 2%;
+}
+.fnb {
   height: 200px;
 }
-footer span ul {
+.fnb > ul {
   float: left;
-  padding: 0 15%;
+  width: calc(100%/3);
+  font-size: 1.5vw;
+}
+.fnb > ul > li {padding-bottom: 5%;}
+.fnb > li {
+  float: left;
 }
 /* footer end */

@@ -1,3 +1,25 @@
+let scrollTop = 0;
+    // 처음엔 0으로 설정
+    let bar;
+
+    window.onload = function(){
+      bar = document.getElementsByClassName('bar')[0];
+    }
+    window.addEventListener('scroll', function(e){
+      scrollTop = document.documentElement.scrollTop;
+      console.log('스크롤값:' + scrollTop)
+      // 스크롤 아래끝까지 하면 스크롤 세로값 나옴
+      /*let per = Math.ceil(scrollTop / document.body.scrollHeight * 100);
+      scrollTop이 몇퍼센트 내려와있는지
+                           문서의 전체 길이 *100
+      그런데 이렇게 하면 노란색 스크롤이 끝까지 안 감         
+      */
+      let per = Math.ceil(scrollTop / (document.body.scrollHeight - window.outerHeight)*100);
+      console.log(per);
+
+      bar.style.width = per + '%';
+    }, false)
+
 $(document).ready(function(){
       
       
@@ -5,11 +27,7 @@ $(document).ready(function(){
     click:function(e){
       e.preventDefault();
       var pageNum=$(this).index()
-      // 클릭한 버튼의  index()값
-      // console.log(pageNum)
       var section =$('section').eq(pageNum)
-      // 선택한 요소의 인덱스 번호에 해당하는 요소를 찾음
-      // console.log(section)
       var offset=section.offset().top;
       // 선택한 요소의 좌표값
       // 위에서 부터 얼마만큼 떨어져잇냐
