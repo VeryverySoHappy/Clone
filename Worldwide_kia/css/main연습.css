@@ -1,11 +1,9 @@
-/* section01 start */
-section{
-  width: 100%;
+#contents section {
   height: 100vh;
-  background-color: #1b1d22;
-  color: rgb(55, 55, 55);
   position: relative;
+  background-color: #1b1d22;
 }
+/* section1 start */
 .video_box {
   height: 100vh;
 }
@@ -14,7 +12,7 @@ video {
   height: 100vh;
   object-fit: cover;
 }
-.section01 .text_wrap {
+.section1 .text_wrap {
   position: absolute;
   bottom: 8%;
   left: 50%;
@@ -22,31 +20,18 @@ video {
   color: #fff;
   text-align: center;
 }
-.section01 .text_wrap h2 {
+.section1 .text_wrap h2 {
   font-size: 3vw;
 }
-.section01 .text_wrap p {
+.section1 .text_wrap p {
   font-size: 1vw;
   color: rgb(228, 228, 228);
   margin-top: 2%;
 }
-.section01 .text_wrap a {
-  display: inline-block;
-  position: absolute;
-  font-size: 2vw;
-  color: #fff;
-  animation: 1s linear infinite alternate updown;
-}
-@keyframes updown {
-  100% {
-    transform: translateY(20px);
-  }
-}
-/* section01 end */
+/* section1 end */
 
-/* section02 start */
-.section02 {position: relative;}
-.section02 .text_wrap {
+/* section2 start */
+.section2 .text_wrap {
   float: left;
   width: 35%;
   position: absolute;
@@ -55,30 +40,29 @@ video {
   color: #fff;
   display: none;
 }
-.section02 .text_wrap p {font-size: 2vw;}
-.section02 .text_wrap p span {color: #a1a1a1;}
-.section02 .text_wrap h2 {
+.section2 .text_wrap p {font-size: 2vw;}
+.section2 .text_wrap p span {color: #a1a1a1;}
+.section2 .text_wrap h2 {
   font-size: 6vw;
 }
-.section02 .swiper {
+.section2 .swiper {
   float: right;
   width: 60%;
 }
-.section02 .swiper-slide {
+.section2 .swiper-slide {
   width: 100%;
   height: auto;
 }
-.section02 .swiper-slide img {
+.section2 .swiper-slide img {
   width: 100%;
   height: auto;
 }
-.section02 .explain {
+.section2 .explain {
   width: 20%;
 }
-/* section02 end */
+/* section2 end */
 
-/* section03 start */
-/* section03_swiper start*/
+/* section3 start */
 .swiper {
   width: 100%;
   height: 100%;
@@ -185,96 +169,4 @@ video {
   border: 1px solid #00000061;
 }
 /* section03_swiper end*/
-/* section03 end */
-/* section04 start */
-  .section04 h2 {
-    float: right;
-    margin: 8%;
-    box-sizing: border-box;
-    font-size: 3.5vw;
-    font-weight: normal;
-    color: #a1a1a1;
-    position: relative;
-  }
-  .section04 h2:after {
-    position: absolute;
-    bottom: -20%;
-    right: 0%;
-    content: '';
-    width: 80%;
-    height: 1px;
-    background-color: #fff;
-  }
-  .section04 ul{
-    float: left;
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
-    width: 60%;
-  }
-  .section04 li {
-    position: relative;
-    float: left;
-    margin: 2%;
-  }
-  .section04 .last_li {
-    width: 500px;
-    height: 270px;
-    background-color: rgba(0,0,0,0.3);
-    transition: 1s;
-    position: relative;
-  }
-  .section04 li a {transition: .5s;}
-  .section04 li:hover a:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-  }
-  .section04 img {
-    top: 0;
-    left: 0;
-    width: 500px;
-    height: 270px;
-  }
-  .section04 li h3 {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 5%;
-    color: #fff;
-    font-size: 1.5vw;
-    z-index: 10;
-  }
-  .section04 li:last-child h3 {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .section04 li p {
-    display: none;
-    position: absolute;
-    top: 30%;
-    padding: 5%;
-    box-sizing: border-box;
-    color: rgb(202, 202, 202);
-    font-size: 0.8vw;
-    line-height: 1.5vw;
-    z-index: 11;
-  }
-  .section04 li:hover p {display: block;}
-  .section04 .link {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-/* section04 end */
-.section05 div {
-  position: absolute;
-}
+/* section3 end */
