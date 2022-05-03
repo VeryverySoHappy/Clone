@@ -1,5 +1,21 @@
 @charset "utf-8";
 
+body, div, nav, ul, li, h2, strong, a, h1 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 12px;
+  color: #222;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(174, 174, 174);
+}
 .skip, legend {
   width: 1px;
   height: 1px;
